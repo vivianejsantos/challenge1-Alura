@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Frame 6.png" alt="Logo alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="textarea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div class="informacao">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            
+
+            <div class="buttons">
+                <button class="button_encryption" onclick="btnEncriptar()">Criptografar</button>
+                <button class="button_decrypt" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="mensage_saida">
+            <textarea id="mensagem__resposta" class="mensagem__resposta" conluns="20" rows="10"></textarea>
+            <button id="btn_copy" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://github.com/vivianejsantos" target="_blank"><img src="assets/Git.png" alt="Logo GitHub " ></a>
+        <p>Desenvolvido por Viviane Santos </p>
+    </footer>
+
+    <!-- antes do fechamento da tag body colocar tag script para vincular com .js -->
+    <script src="app.js"></script>
+</body>
+</html>

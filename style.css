@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&display=swap');
+
+:root{
+    --bg:#E5E5E5;
+    --txt:#0A3871;
+    --bgtxtarea:#ffffff;
+    --btndesati:#D8DFE8;
+
+
+    --fontbtn:1.5rem;
+
+}
+
+*{
+    background-color: var(--bg);
+    font-family: 'inter',sans-serif;
+    box-sizing: border-box;
+    font-weight:400;
+    line-height:150% ;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    height: 100vh;
+    
+}
+.logo{
+    margin-left: 0.625rem;
+    padding-top: 0.625rem;
+
+}  
+main{
+    display: flex;
+    margin-bottom: 3.125rem;
+    margin-left: 5rem;
+} 
+
+.textarea{
+    border: none;
+    color: var(--txt);
+    font-size: 2rem;
+    margin-top: 5.625rem;
+    margin-bottom: 5rem;
+    text-transform: lowercase;
+}
+::placeholder{color: var(--txt);}
+    .textarea:focus{
+        outline: none; /* não deixa ter linha quando clicar para digitar  */ 
+    }
+ .mensagem__resposta{
+    background: var(--bgtxtarea);
+    background-image: url(assets/‘Super\ Mario\ Kart’s’\ Masterful\ Mushroom\ Cup.gif);
+    background-repeat: no-repeat;
+    background-position:top;
+    border: none;
+    border-radius: 1.5rem;
+    border-color:var(--txt) ;
+    margin-top: 1.25rem;
+    margin-left: 98px;
+    padding-left:1.25rem;
+    font-size: 2rem;
+    position: relative;
+ }
+ 
+
+.mensage_saida{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 1.125rem;
+
+}
+
+.button_encryption{
+    background-color: var(--txt);
+    border: 1px solid var(--txt);
+    border-radius: 21.5rem;;
+    color:var(--bgtxtarea) ;
+    cursor: pointer;
+    font-size: var(--fontbtn);
+    height: 67;
+    width:328px;
+}
+.button_decrypt{
+    background:var(--btndesati);
+    border: 1px solid var(--txt);
+    border-radius: 1.5rem;
+    color:var(--txt) ;
+    cursor: pointer;
+    font-size: var(--fontbtn);
+    margin-left: 1.8rem;
+    height: 67;
+    width:328px;
+}
+#btn_copy{
+
+    border: 1px solid var(--txt);
+    border-radius: 1.5rem;
+    color:var(--txt) ;
+    cursor: pointer;
+    font-size: var(--fontbtn);
+    margin-left: 8rem;
+    margin-top: 28.1258rem;
+    position: absolute;
+    height: 67;
+    width:21rem;
+}
+
+.informacao{
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 1.25rem;
+    gap: 1.25rem;
+    color:#495057;   
+    font-size: 1.5rem;
+}
